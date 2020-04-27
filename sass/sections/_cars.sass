@@ -1,6 +1,7 @@
 .cars
 	&-head
 		padding: 50px 0
+		// background-image: url(../img/cars-head-bg.jpg);
 		background-size: cover
 		background-position: center
 		position: relative
@@ -73,41 +74,44 @@
 		&:hover
 			color: $text
 	h2
-		background-color: $accent
+		color: $accent
 		font-weight: 700
-		font-size: 20px
-		text-transform: uppercase
 		border-radius: initial
-		color: #fff
 		height: 50px
 		display: inline-block
 		font-weight: bold
 		font-size: 20px
 		line-height: 50px
-		text-align: center
-		padding: 0 10px
 		position: relative
-		margin-bottom: 55px
-		&:after
-			position: absolute
-			z-index: -1
-			content: ""
-			right: -10%
-			top: 0
-			height: 50px
-			width: 100%
-			background-color: inherit
-			transform: skewX(-10deg)
-		&:before
-			position: absolute
-			z-index: -1
-			content: ""
-			left: -10%
-			top: 0
-			height: 50px
-			width: 100%
-			background-color: inherit
-			transform: skewX(-10deg)
+		margin-bottom: 35px
+		span
+			color: $grey
+		&.old
+			text-transform: uppercase
+			padding: 0 10px
+			text-align: center
+			background-color: $accent
+			color: #fff
+			&:after
+				position: absolute
+				z-index: -1
+				content: ""
+				right: -10%
+				top: 0
+				height: 50px
+				width: 100%
+				background-color: inherit
+				transform: skewX(-10deg)
+			&:before
+				position: absolute
+				z-index: -1
+				content: ""
+				left: -10%
+				top: 0
+				height: 50px
+				width: 100%
+				background-color: inherit
+				transform: skewX(-10deg)
 
 	.photo
 		position: relative
@@ -151,8 +155,9 @@
 		display: flex
 		align-items: center
 		position: absolute
+		// bottom: 65px
+		top: 45px
 		left: 0
-		bottom: 65px
 		img
 			width: 35px
 			height: auto
@@ -162,7 +167,7 @@
 			margin-left: 13px
 	&.active
 		h2.mypulse
-			background-color: #000
+			// background-color: #000
 			animation-name: mypulse
 			animation-iteration-count: infinite
 			animation-delay: .2s
@@ -172,14 +177,16 @@
 			opacity: 0
 		.photo img:last-child
 			opacity: 1
-.benefit
-	display: block
-	font-weight: bold
-	color: $accent
-	margin-bottom: 20px
-	position: absolute
-	top: 60px
-	left: -12px
+	.benefit
+		display: block
+		font-weight: bold
+		color: $accent
+		margin-bottom: 20px
+		position: absolute
+		// top: 60px
+		// left: -12px
+		bottom: 45px
+		left: 0
 @-webkit-keyframes mypulse 
 	from 
 		transform: scale3d(1, 1, 1)
