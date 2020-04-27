@@ -32,18 +32,32 @@
 					<img src="img/hyundai-logo.svg" alt="Хёндэ">
 				</span>
 				<!-- /.header-logo -->
-				<div class="header-phones rand">
+				<div class="header-phones rand1">
 					<div class="phone phone-one">
-						<img src="img/phone.svg" alt="Иконка">
+						<img src="img/icons/path.svg" alt="Как проехать">
+						<span class="phone-info">
+							<a href="#maps">Как проехать</a>
+							<small>Ново-Урицкая, 22А</small>
+						</span>							
+					</div>
+					<div class="phone phone-two">
+						<img src="img/icons/phone.svg" alt="Телефон">
 						<span class="phone-info">
 							<a href="tel:+78469777888">8 (846) 9 777 888</a>
-							<small>Ново-Урицкая, 22А</small>
+							<small><a href="mailto:call@hyundai-alpha.ru">call@hyundai-alpha.ru</a></small>
+						</span>							
+					</div>
+					<div class="phone phone-three">
+						<img src="img/icons/clock.svg" alt="Время работы">
+						<span class="phone-info">
+							<a href="#callbackForm" class="modal-link" data-title="Предварительная запись">8:00-20:00</a>
+							<small>Ежедневно</small>
 						</span>							
 					</div>
 				</div>
 				<!-- /.header-phones -->
 				<div class="header-right">
-					<a href="#callbackForm" class="btn modal-link">Обратный звонок</a>
+					<a href="#callbackForm" class="btn modal-link">Обратный&nbsp;звонок</a>
 				</div>
 				<!-- /.header-right -->
 			</div>
@@ -79,10 +93,10 @@
 				<h2>Хотите узнать о&nbsp;снижении цен и о&nbsp;максимальных скидках?</h2>
 				<p>Оставьте свой номер телефона, и&nbsp;наш менеджер перезвонит Вам</p>
 				<form action="#">
-					<input type="text" placeholder="Ваше имя*" required>
-					<input type="tel" placeholder="+7 (999)999-99-99 " required>
+						<input type="text" placeholder="Ваше имя*" name="Имя" required>
+						<input type="tel" placeholder="8 (999) 999-99-99" name="Телефон" required>
 					<input type="email" name="Email" placeholder="mail@example.com">
-					<button class="btn">Подписаться</button>
+						<button type="submit" class="btn">Подписаться</button>
 					<small>Нажимая на кнопку "Подписаться", я&nbsp;даю согласие на <a href="#popup">обработку персональных данных</a></small>
 				</form>
 			</div>
@@ -91,7 +105,7 @@
 	</div>
 	<!-- /.container -->
 	</div>
-	<!-- /.her -->
+	<!-- /.hero -->
 
 	<main>
 		<section class="cars" id="cars">
@@ -103,16 +117,18 @@
 			</div>
 			<!-- /.cars-head -->
 			<ul class="cars-links">
-				<li><a class="scroll" href="#">SOLARIS</a></li>
-				<li><a class="scroll" href="#">CRETA</a></li>
-				<li><a class="scroll" href="#">SONATA</a></li>
-				<li><a class="scroll" href="#">ELANTRA</a></li>
-				<li><a class="scroll" href="#">SONATA</a></li>
-				<li><a class="scroll" href="#">CRETA</a></li>
-				<li><a class="scroll" href="#">CRETA</a></li>
-				<li><a class="scroll" href="#">TUCSON</a></li>
-				<li><a class="scroll" href="#">SANTA FE</a></li>
-				<li><a class="scroll" href="#">H-1</a></li>
+				<li><a class="scroll" href="#NEWSOLARIS">Новый СОЛЯРИС</a></li>
+				<li><a class="scroll" href="#TUCSON-N-LINE">Туссан N Line</a></li>
+				<li><a class="scroll" href="#CRETA">Новая КРЕТА</a></li>
+				<li><a class="scroll" href="#SONATA">Новая СОНАТА</a></li>
+				<li><a class="scroll" href="#SOLARIS">СОЛЯРИС</a></li>
+				<!-- <li><a class="scroll" href="#i30N">i30 N</a></li> -->
+				<li><a class="scroll" href="#ELANTRA">ЭЛАНТРА</a></li>
+				<li><a class="scroll" href="#CRETA">КРЕТА</a></li>
+				<li><a class="scroll" href="#TUCSON">Новый ТУССАН</a></li>
+				<li><a class="scroll" href="#SANTA-FE">Новый САНТА ФЭ</a></li>
+				<li><a class="scroll" href="#ROCK-EDITION">КРЕТА ROSK EDITION</a></li>
+				<li><a class="scroll" href="#H-1">ЭЙЧ-1</a></li>
 			</ul>
 			<!-- /.cars-links -->
 			
@@ -246,11 +262,11 @@
 				<!-- /.offer-head -->
 				<div class="offer-form">
 					<form action="#">
-						<input type="text" placeholder="Ваше имя*" required>
-						<input type="tel" placeholder="+7 (999)999-99-99 " required>
+						<input type="text" placeholder="Ваше имя*" name="Имя" required>
+						<input type="tel" placeholder="8 (999) 999-99-99" name="Телефон" required>
 						<input type="email" name="Email" placeholder="mail@example.com">
-						<textarea placeholder="Комментарии"></textarea>
-						<button class="btn bounce">Записаться</button>
+						<textarea name="Комментарий" placeholder="Комментарии"></textarea>
+						<button type="submit" class="btn bounce">Записаться</button>
 						<small>Вам перезвонит менеджер и уточнит детали и удобное для Вас время, чтобы подготовить документы</small>
 						<small>Нажимая на кнопку "Подписаться", я даю согласие на <a href="#popup">обработку персональных данных</a></small>
 					</form>
@@ -262,7 +278,7 @@
 		<!-- /.offer -->
 
 		<div class="maps rand">
-
+			<a class="anchor" id="maps"></a>
 			<div class="dealer">
 				<span class="dealer-info">
 					<h2>«Автоцентр Альфа»</h2>
@@ -271,9 +287,11 @@
 						<a href="tel:+78469777888" class="dealer-phone">8 (846) 9 777 888</a>
 						<a href="mailto:call@hyundai-alpha.ru" class="dealer-email">call@hyundai-alpha.ru</a>	
 					</span>
+					<span class="dealer-address">г. Самара, Ново-Урицкая, 22А<br>
+						<small><a href="https://yandex.ru/maps/51/samara/?from=api-maps&ll=50.152043%2C53.184167&mode=routes&origin=jsapi_2_1_76&rtext=~53.184167%2C50.151410&rtt=auto&ruri=~&z=17">Проложить маршрут</a></small>
+					</span>
 					<sapn class="dealer-time">пн — вс: 8:00 — 20:00</sapn>
-					<span class="dealer-address">г. Самара, Ново-Урицкая, 22А</span>
-					<a href="https://yandex.ru/maps/51/samara/?from=api-maps&ll=50.152043%2C53.184167&mode=routes&origin=jsapi_2_1_76&rtext=~53.184167%2C50.151410&rtt=auto&ruri=~&z=17">Проложить маршрут</a>
+					
 				</span>
 				<span class="dealer-map lazyload" style="background-image: url(img/loading.gif);" data-srcbefore="img/hyundai-map.jpg">
 					<span class="loader loader-default"></span>
@@ -290,7 +308,7 @@
 
 	<footer class="footer">
 		<p>Специальные предложения на Hyundai в Самаре</p>
-		<img src="img/hyundai-logo.svg" alt="Хендай">
+		<img src="img/hyundai-logo-small.svg" alt="Хендай">
 	</footer>
 
 	<div class="top">
@@ -332,10 +350,10 @@
 		<h2>Обратный звонок</h2>
 		<p>Можем предложить специальные условия именно для вас!</p>
 		<form action="#">
-			<input type="text" placeholder="Ваше имя*" required>
-			<input type="tel" placeholder="+7 (999)999-99-99 " required>
+			<input type="text" placeholder="Ваше имя*" name="Имя" required>
+			<input type="tel" placeholder="8 (999) 999-99-99" name="Телефон" required>
 			<input type="email" name="Email" placeholder="mail@example.com">
-			<button class="btn">Перезвоните мне</button>
+			<button type="submit" class="btn">Перезвоните мне</button>
 			<small>Нажимая на кнопку "Подписаться", я даю согласие на <a href="#popup">обработку персональных данных</a></small>
 		</form>
 	</div>
@@ -345,10 +363,10 @@
 		<h2>Хотите дешевле?</h2>
 		<p>Оставьте заявку и мы сформируем для Вас персональное предложение</p>
 		<form action="#">
-			<input type="text" placeholder="Ваше имя*" required>
-			<input type="tel" placeholder="+7 (999)999-99-99 " required>
+			<input type="text" placeholder="Ваше имя*" name="Имя" required>
+			<input type="tel" placeholder="8 (999) 999-99-99" name="Телефон" required>
 			<input type="email" name="Email" placeholder="mail@example.com">
-			<button class="btn">Хочу дешевле</button>
+			<button type="submit" class="btn">Хочу дешевле</button>
 			<small>Нажимая на кнопку "Подписаться", я даю согласие на <a href="#popup">обработку персональных данных</a></small>
 		</form>
 	</div>
@@ -357,7 +375,7 @@
 	<div class="modal mfp-hide white-popup-block credit" id="credit">
 		<h2>Рассчитать кредит</h2>
 		<p>Оставьте заявку и мы сформируем для Вас персональное предложение</p>
-		<form action="#" method="GET" class="kia-form" style="display: block; width: 100%">
+		<form action="#" method="GET" class="hyundai-form" style="display: block; width: 100%">
 			<div class="contribution" data-input-lid="contribution">
 				<p class="range__title">Первоначальный взнос</p>
 				<div class="range__wrapper">
@@ -380,12 +398,21 @@
 					</div>
 				</div>
 			</div>
-			<input type="text" placeholder="Ваше имя*" required>
-			<input type="tel" placeholder="+7 (999)999-99-99 " required>
+			<input type="text" placeholder="Ваше имя*" name="Имя" required>
+			<input type="tel" placeholder="8 (999) 999-99-99" name="Телефон" required>
 			<input type="email" name="Email" placeholder="mail@example.com">
 			<button class="btn">Рассчитать кредит</button>
 			<small>Нажимая на кнопку "Подписаться", я даю согласие на <a href="#popup">обработку персональных данных</a></small>
 		</form>
+	</div>
+
+	<div class="thanks modal mfp-hide white-popup-block">
+		<h2>Спасибо!</h2>
+		<p>Ваше сообщение успешно отправлено!<br>В скором времени мы свяжемся с Вами!</p>
+	</div>
+	<div class="error modal mfp-hide white-popup-block">
+		<h2>Ошибка!</h2>
+		<p>Мы не уверены что сообщение доставлено!<br>Попробуйте обновить страницу!</p>
 	</div>
 
 	<!-- /MODALS -->

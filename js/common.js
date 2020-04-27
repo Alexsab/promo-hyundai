@@ -130,6 +130,14 @@ jQuery(function($) {
 		$('#cheaper form #val-model, #credit form #val-model').val(model);
 	});
 
+	$('a[href="#callbackForm"]').on('click', function(){
+		var title = $(this).data('title');
+		if(title) 
+			$('#callbackForm').find('h2').text(title);
+		else
+			$('#callbackForm').find('h2').text($(this).text());
+	});
+
 	// $('input[type="tel"]').mask('8 (999) 999-99-99');
 
 	$('.lazyload').lazyload();

@@ -30,7 +30,7 @@
 		&-time
 			font-size: 18px
 		&-map, &-map2
-			background-color: #ccc
+			background-color: #fff
 			background-repeat: no-repeat
 			background-size: cover
 			background-position: center
@@ -40,6 +40,8 @@
 			position: relative
 			overflow: hidden
 			cursor: pointer
+			&.lazyload
+				background-size: initial
 
 .maps .dealer-map:before, .maps .dealer-map2:before
 	content: ''
