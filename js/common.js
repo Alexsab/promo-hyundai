@@ -78,6 +78,15 @@ jQuery(function($) {
 		e.preventDefault();
 	});
 
+	$('.disclamer_switch').click(function(){
+		$('.disclamer').slideToggle({
+			start: function(){
+				$("html, body").animate({scrollTop: $("html, body").height()},"slow");
+			}
+		});
+		return false;
+	});
+
 	$('.top').click(function() {
 		$('html, body').stop().animate({scrollTop: 0}, 'slow', 'swing');
 	});
