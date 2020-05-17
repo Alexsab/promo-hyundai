@@ -19,6 +19,7 @@
 		z-index: 1
 		background-size: cover
 		background-position: center
+		background-repeat: no-repeat
 		&:before
 			z-index: -1
 	.container
@@ -127,3 +128,38 @@ form
 			font-weight: 300
 			&:hover
 				color: #000
+
+// ≤992px
++media-breakpoint-down(md)
+	.hero.cover
+		padding-top: 0
+		background-image: url(../img/mob-bg.jpg) !important
+		background-size: cover
+		background-position: center
+		z-index: 1
+		&:before
+			z-index: -1
+			background-color: rgba(#000, .4)
+	.hero-wrap
+		padding-top: 10%
+
+// ≤768px
++media-breakpoint-down(sm)
+	.hero-wrap
+		flex-direction: column
+		align-items: center
+	.hero-text
+		margin-bottom: 40px
+	.hero-form button
+		animation-iteration-count: inherit
+
+// ≤576px
++media-breakpoint-down(xs)
+	.hero, .hero.cover
+		background-size: contain
+		background-position: top center
+		background-color: #bebfc1
+		min-height: 0
+		height: auto
+	.hero-form
+		padding: 25px 20px
