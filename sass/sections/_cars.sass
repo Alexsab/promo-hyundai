@@ -20,7 +20,7 @@
 			max-width: 680px
 			width: 100%
 			font-size: 36px
-			color: #fff
+			color: $white
 			margin: 0 auto
 			text-align: center
 			line-height: 1.35
@@ -43,21 +43,21 @@
 			z-index: -1
 		h2
 			font-size: 2em
-			color: #fff
+			color: $white
 			line-height: 1.35
 		.subtitle
 			font-size: 1.6em
 			display: block
-			color: #fff
+			color: $white
 			span
 				font-size: 1.2em
-				color: #fe3c00
+				color: $red
 				font-weight: 700
 		form
 			margin-top: 40px
 			max-width: 400px
 			.btn
-				background-color: #fe3c00
+				background-color: $red
 			small
 				filter: invert(1)
 			input
@@ -73,7 +73,7 @@
 			// flex: auto
 			text-align: center
 		a
-			background-color: #fff
+			background-color: $white
 			padding: 10px 30px
 			box-shadow: 0 15px 35px -5px rgba(0,0,0,.25)
 			color: #3e4757
@@ -119,14 +119,14 @@
 		position: absolute
 		left: 0
 		top: -18px
-		background-color: rgba(16,181,220,.5)
+		background-color: $red
+		color: $white
 		padding: 2px 9px
 		font-size: 14px
 		line-height: 18px
 		font-weight: 500
 		letter-spacing: .05em
 		white-space: nowrap
-		color: #000
 	h2
 		color: $accent
 		font-weight: 700
@@ -145,7 +145,7 @@
 			padding: 0 10px
 			text-align: center
 			background-color: $accent
-			color: #fff
+			color: $white
 			&:after
 				position: absolute
 				z-index: -1
@@ -221,12 +221,12 @@
 			margin-left: 13px
 	&.active
 		h2.mypulse
-			// background-color: #000
+			// background-color: $black
 			animation-name: mypulse
 			animation-iteration-count: infinite
 			animation-delay: .2s
 		.benefit
-			color: #000
+			color: $black
 		.photo img
 			opacity: 0
 		.photo img:last-child
