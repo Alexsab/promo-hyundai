@@ -64,6 +64,13 @@ b, strong
 		border: 1px solid $accent
 		box-shadow: none
 
+input[tabindex="-1"]
+	opacity: 0
+	position: absolute
+	z-index: -100
+	max-width: 200px
+	height: 0
+
 @import sections/header
 @import sections/hero
 @import sections/cars
