@@ -1,0 +1,85 @@
+.reviews
+	h2
+		margin-bottom: 3vmax
+		text-align: center
+		text-transform: uppercase
+	&__block
+		.slick-list
+			padding: 20px 0 30px
+			+media-breakpoint-down(sm)
+				padding: 0
+				margin-top: 20px
+	&__item
+		padding: 0 20px
+		outline: none !important
+		color: $text
+		font-weight: 300
+		opacity: 0
+		font-size: 16px
+		+media-breakpoint-down(lg)
+			padding: 0 15px
+		+media-breakpoint-down(sm)
+			margin-top: 15px
+		blockquote
+			position: relative
+			background-color: #fff
+			box-shadow: 2px 6px 20px -4px rgba(18,34,45,0.2)
+			padding: 30px 20px
+			+media-breakpoint-down(lg)
+				padding: 25px 15px
+			&:after
+				content: ""
+				position: absolute
+				left: 50px
+				bottom: -15px
+				display: block
+				width: 0
+				height: 0
+				border-style: solid
+				border-width: 15px 15px 0 0
+				border-color: #fff transparent transparent transparent
+				filter: drop-shadow(2px 2px 1px rgba(0,0,0,0.05))
+		&--bottom
+			align-items: center
+			margin-top: 20px
+			img
+				width: 50px
+				height: 100%
+				margin-right: 20px
+			h4
+				margin-bottom: 0
+				line-height: 1.4
+			small
+				font-size: 14px
+
+
+// SLICK SLIDER
+.slick-list
+	background: none !important
+.slick-slider
+	font-family: inherit
+	*
+		font-family: inherit
+.slick-prev,
+.slick-next   
+	&:before 
+		font-family: inherit
+.slick-dots
+	+media-breakpoint-down(sm)
+		bottom: -40px
+	li
+		margin: 0
+		button
+			font-size: 0
+			font-family: inherit
+			&:before
+				color: $grey
+				font-size: 40px
+				opacity: 0.8
+				font-family: inherit
+		&.slick-active
+			button:before
+				color: $accent1
+				opacity: 1
+
+

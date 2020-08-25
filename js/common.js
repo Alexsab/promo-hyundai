@@ -59,6 +59,31 @@ jQuery(function($) {
 	$("h1, .subtitle, .maps .dealer:nth-child(odd) .dealer-info").animated("fadeInLeft", "fadeInLeft");
 	$(".hero-form, .maps .dealer:nth-child(even) .dealer-info").animated("fadeInRight", "fadeInRight");
 
+	$('.reviews__block').slick({
+		infinite: true,
+		slidesToShow: 3,
+		slidesToScroll: 1,
+		dots: true,
+		arrows: false,
+		adaptiveHeight: true,
+		responsive: [
+		{
+			breakpoint: 992,
+			settings: {
+				slidesToShow: 2,
+			}
+		},
+		{
+			breakpoint: 768,
+			settings: {
+				slidesToShow: 1,
+			}
+		},
+		]
+	});
+
+	$('.reviews__item').animated('fadeInDown', 'fadeInDown');
+
 	if ($(window).width() > 768) {
 		$('.player').mb_YTPlayer();
 	}
