@@ -2,7 +2,7 @@
 			src: [
 				base.promo_hyundai + '/libs/jquery/dist/jquery.min.js',
 				base.promo_hyundai + '/libs/Magnific-Popup-master/jquery.magnific-popup.js',
-				'node_modules/slick-1.8.1/slick/slick.min.js',
+				'node_modules/slick-carousel/slick/slick.min.js',
 				base.promo_hyundai + '/libs/range/range.js',
 				base.promo_hyundai + '/libs/animate/animate-css.js',
 				base.promo_hyundai + '/libs/jquery.mb.YTPlayer.min.js',
