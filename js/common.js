@@ -66,6 +66,8 @@ jQuery(function($) {
 		dots: true,
 		arrows: false,
 		adaptiveHeight: true,
+		// centerMode: true,
+		// variableWidth: true,
 		responsive: [
 		{
 			breakpoint: 992,
