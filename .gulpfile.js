@@ -132,6 +132,6 @@ function promo_hyundai_watch() {
 	watch(projects.promo_hyundai.code.src).on('change', browserSync.reload);
 };
 
-module.exports = parallel(promo_hyundai_styles, promo_hyundai_scripts, promo_hyundai_browsersync, promo_hyundai_watch);
+exports.promo_hyundai = parallel(promo_hyundai_styles, promo_hyundai_scripts, promo_hyundai_browsersync, promo_hyundai_watch);
 
 /* promo_hyundai END */
