@@ -299,94 +299,103 @@
 				color: $accent
 				font-weight: 900
 
-		.descr
-			display: flex
-			flex-wrap: wrap
-			flex-basis: 100%
-			&-item
-				white-space: normal
-				color: $grey72
-				font-size: 12px
-				font-weight: 900
-				text-decoration: none
-				padding: 21px 10px 10px 0
-				margin-bottom: 10px
-				position: relative
-				display: inline-block
-				line-height: 100%
-				padding-left: 90px
-				box-sizing: border-box
-				min-height: 70px
+	.descr
+		display: flex
+		flex-wrap: wrap
+		flex-basis: 100%
+		&-item
+			white-space: normal
+			color: $grey72
+			font-size: 12px
+			font-weight: 900
+			text-decoration: none
+			padding: 21px 10px 10px 0
+			margin-bottom: 10px
+			position: relative
+			display: inline-block
+			line-height: 100%
+			padding-left: 90px
+			box-sizing: border-box
+			min-height: 70px
 
-				&:not(.quantity)
-					flex-basis: 32%
-					&:before
-						border: 10px solid $greey
-						border-width: 13px 25px 14px 12px
-
-				&.quantity
-					padding: 80px 10px 10px 12px
-					background: $greey
-					flex-basis: 20%
-					flex-grow: 1
-					&:before
-						margin: 13px 25px 14px 12px
-
+			&:not(.quantity):not(.present)
+				flex-basis: 32%
 				&:before
-					content: ""
-					box-sizing: content-box
-					width: 43px
-					height: 43px
-					background: $red
-					position: absolute
-					top: 0
-					left: 0px
-					z-index: 0
+					border: 10px solid $greey
+					border-width: 13px 25px 14px 12px
 
-				&:after
-					content: ""
-					position: absolute
-					width: 43px
-					height: 43px
-					top: 25px
-					left: 21px
-					z-index: 1
-				
-				&.quantity:after
-					content: url(../img/icons/quantity.svg)
-				&.color:after
-					content: url(../img/icons/color.svg)
-				&.credit:after
-					content: url(../img/icons/credit.svg)
-				&.trade-in:after
-					content: url(../img/icons/trade-in.svg)
-				&.eye:after
-					content: url(../img/icons/eye.svg)
-				&.present:after
-					content: url(../img/icons/present.svg)
-		.benefit
-			display: block
-			font-weight: bold
-			color: $accent
-			margin-bottom: 20px
-			position: absolute
-			// top: 60px
-			// left: -12px
-			bottom: 45px
-			left: 0
+			&.quantity
+				padding: 80px 10px 10px 12px
+				background: $greey
+				flex-basis: 20%
+				flex-grow: 1
+				max-width: 110px
+				&:before
+					margin: 13px 25px 14px 12px
 
-		.btn-wrap
-			display: flex
-			align-items: center
-			justify-content: space-between
-			position: absolute
-			width: 100%
-			left: 0
-			bottom: 0
-			.btn
-				font-size: 14px
-				text-transform: none
-				padding: 12px 25px
+			&.present
+				padding: 80px 10px 10px 12px
+				background: $greey
+				flex-basis: 20%
+				flex-grow: 1
+				max-width: 110px
+				&:before
+					margin: 13px 25px 14px 12px
+
+			&:not(.present):before
+				content: ""
+				box-sizing: content-box
+				width: 43px
+				height: 43px
+				background: $red
+				position: absolute
+				top: 0
+				left: 0px
+				z-index: 0
+
+			&:after
+				content: ""
+				position: absolute
+				width: 43px
+				height: 43px
+				top: 25px
+				left: 21px
+				z-index: 1
+			
+			&.quantity:after
+				content: url(../img/icons/quantity.svg)
+			&.color:after
+				content: url(../img/icons/color.svg)
+			&.credit:after
+				content: url(../img/icons/credit.svg)
+			&.trade-in:after
+				content: url(../img/icons/trade-in.svg)
+			&.eye:after
+				content: url(../img/icons/eye.svg)
+			&.present:after
+				content: url(../img/icons/present.svg)
+
+	.benefit
+		display: none
+		font-weight: bold
+		color: $accent
+		margin-bottom: 20px
+		// position: absolute
+		// top: 60px
+		// left: -12px
+		// bottom: 45px
+		// left: 0
+
+	.btn-wrap
+		display: flex
+		flex-flow: column
+		flex-grow: 2
+		.btn
+			flex: 1 0 100%
+			font-size: 14px
+			text-transform: none
+			padding: 12px 25px
+			margin-bottom: 10px
 
 .car1
 	display: none
