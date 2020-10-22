@@ -256,7 +256,6 @@
 		left: 0px
 		line-height: 1.2
 		width: 100%
-		text-align: center
 
 	.car-link
 		display: flex
@@ -311,10 +310,10 @@
 		&-item
 			white-space: normal
 			color: $grey72
-			font-size: 12px
+			font-size: 14px
 			font-weight: 900
 			text-decoration: none
-			padding: 21px 10px 10px 0
+			padding: 13px 10px 10px 0
 			margin-bottom: 10px
 			position: relative
 			display: inline-block
@@ -324,10 +323,11 @@
 			min-height: 70px
 			&:hover
 				cursor: pointer
-				&:not(.present):before
-					background-color: darken($red, 10%)
+				color: $accent1
+				&:before
+					background-color: lighten($red, 10%)
 
-			&:not(.quantity):not(.present)
+			&:not(.quantity)
 				flex-basis: 32%
 				&:before
 					border: 10px solid $greey
@@ -338,25 +338,17 @@
 				background: $greey
 				flex-basis: 20%
 				flex-grow: 1
-				max-width: 110px
+				max-width: 120px
 				&:before
 					margin: 13px 25px 14px 12px
 
-			&.present
-				padding: 80px 10px 10px 12px
-				background: $greey
-				flex-basis: 20%
-				flex-grow: 1
-				max-width: 110px
-				&:before
-					margin: 13px 25px 14px 12px
-
-			&:not(.present):before
+			&:before
 				content: ""
 				box-sizing: content-box
 				width: 43px
 				height: 43px
 				// background: lighten($red, 5%)
+				border-width: 13px 25px 14px 12px
 				background: $red
 				position: absolute
 				top: 0
@@ -386,17 +378,6 @@
 			&.present:after
 				content: url(../img/icons/present.svg)
 
-	.benefit
-		display: none
-		font-weight: bold
-		color: $accent
-		margin-bottom: 20px
-		// position: absolute
-		// top: 60px
-		// left: -12px
-		// bottom: 45px
-		// left: 0
-
 	.btn-wrap
 		display: flex
 		flex-flow: column
@@ -411,19 +392,23 @@
 				margin-bottom: 0
 	&-bottom
 		.gift-box
-			width: 106px
+			width: 123px
 			height: 106px
-			background-color: $accent
-			color: $white
+			background-color: $greey
+			color: $grey72
 			margin-right: 15px
 			background-image: url(../img/icons/gift-box.svg)
 			background-repeat: no-repeat
-			background-size: 30px
+			background-size: 45px
 			background-position: 9% 90%
-			font-size: 13px
+			font-size: 14px
 			padding: 10px
 			line-height: 1.25
 			text-align: right
+			white-space: normal
+			&:hover
+				background-color: darken($greey, 5%)
+				color: $accent1
 
 
 @-webkit-keyframes mypulse 

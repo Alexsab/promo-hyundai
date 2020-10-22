@@ -18,7 +18,7 @@
 			bottom: 105px
 	.car2
 		.descr-item
-			&:not(.quantity):not(.present)
+			&:not(.quantity)
 				flex-basis: 50%
 		.title_bg
 			font-size: 8vw
@@ -49,17 +49,14 @@
 		.title_bg
 			top: -10px
 		.descr-item
-			min-height: 0
-			padding-left: 50px
-			padding-top: 15px
-			margin-bottom: 12px
-			&:not(.quantity):not(.present)
+			min-height: 46px
+			padding-left: 60px
+			&:not(.quantity)
 				flex-basis: 50%
-				font-size: 10px
+				font-size: 14px
 				padding-top: 8px
-				margin-bottom: 23px
 				&:before
-					border-width: 6px
+					border-width: 8px 15px 8px 8px
 					width: 30px
 					height: 30px
 				&:after
@@ -96,8 +93,6 @@
 		&:last-child
 			margin-bottom: 0
 		.car-link
-			padding-bottom: 60px
-			position: relative
 			h2
 				width: auto
 			.photo
@@ -108,7 +103,6 @@
 			font-size: 18vw
 			top: -30px
 			width: 100%
-			text-align: center
 		.descr-item.quantity
 			flex-basis: 100%
 			max-width: 100%
@@ -117,17 +111,14 @@
 			padding-top: 30px
 			padding-bottom: 24px
 			margin-bottom: 0
-			position: absolute
-			left: 0
-			bottom: 0
+			order: 2
+			margin-bottom: 12px
 			.descr-text
 				display: inline-block
 				font-size: 18px
 				color: $text
-		// .descr-item:not(.quantity):not(.present)
-		// 		flex-basis: 50%
-		.btn-wrap
-			margin-top: 20px
+		.descr-item:not(.quantity)
+			flex-basis: 32%
 	.player
 		display: none
 	.modal
@@ -183,18 +174,18 @@
 	.benefit
 		left: 0
 	.car2
-		.descr-item:not(.quantity):not(.present)
-			font-size: 10px
-			padding-top: 8px
 		.title_bg
 			font-size: 18vw
 			top: -5px
 		.car-link
 			.photo
 				margin-bottom: 0
-		.descr-item.quantity
-			.descr-text
-				font-size: 14px
+		.descr-item
+			&:not(.quantity)
+				flex-basis: 50%
+			.quantity
+				.descr-text
+					font-size: 14px
 	.offer
 		padding: 25px 0
 	.modal .range__title
@@ -207,6 +198,18 @@
 			font-size: 15px
 			text-align: left
 
+@media (max-width: 400px) 
+	.car2 
+		.descr-item:not(.quantity)
+			flex-basis: 100%
+		&-bottom 
+			flex-direction: column
+			.gift-box
+				min-height: 54px
+				flex-basis: 100%
+				width: 100%
+				margin-bottom: 10px
+				background-position: 10px
 
 /*==========  Mobile First  ==========*/
 
@@ -246,9 +249,9 @@
 			margin-bottom: 0
 		.descr
 			justify-content: space-between
-		.descr-item:not(.quantity):not(.present)
+		.descr-item:not(.quantity)
 			flex-basis: 50%
-	
+
 
 /*==========  Using the minimum and maximum breakpoint widths  ==========*/
 
