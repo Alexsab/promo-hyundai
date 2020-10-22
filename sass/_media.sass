@@ -2,8 +2,7 @@
 
 // ≤1200px
 +media-breakpoint-down(lg)
-	.car,
-	.car2
+	.car
 		padding-bottom: 150px
 		.btn-wrap
 			flex-direction: column
@@ -17,6 +16,15 @@
 			// bottom: 120px
 		.benefit
 			bottom: 105px
+	.car2
+		.descr-item
+			&:not(.quantity):not(.present)
+				flex-basis: 50%
+		.title_bg
+			font-size: 8vmax
+		.car-link
+			.photo
+				height: 22vmax
 
 // ≤992px
 +media-breakpoint-down(md)
@@ -37,6 +45,9 @@
 		// width: 80px
 	.maps .dealer-info
 		padding-left: 50px
+	.car2
+		.title_bg
+			font-size: 9.6vmax
 
 
 // ≤768px
@@ -50,12 +61,13 @@
 	.maps .dealer-info, .maps .dealer-map, .maps .dealer-map2
 		width: 100%
 	.cars-list
-		justify-content: space-around
-	.car,
-	.car2
+		justify-content: center
+	.car
 		width: 46%
 		margin-left: 2%
 		margin-right: 2%
+	.car2
+		width: 100%
 	.car2 .photo
 		width: 100%
 	.player
