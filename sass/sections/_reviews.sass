@@ -20,14 +20,20 @@
 			padding: 0 15px
 		+media-breakpoint-down(sm)
 			margin-top: 15px
-		blockquote
-			position: relative
+
+		&--text
+			padding: 30px 20px
 			background-color: #fff
 			box-shadow: 2px 6px 20px -4px rgba(18,34,45,0.2)
-			padding: 30px 20px
 			+media-breakpoint-down(lg)
 				padding: 25px 15px
-			&:after
+
+		blockquote
+			position: relative
+			overflow-y: scroll
+			text-overflow: ellipsis
+			max-height: 220px
+			&.whatisit:after
 				content: ""
 				position: absolute
 				left: 50px
@@ -52,6 +58,14 @@
 			small
 				font-size: 14px
 
+::-webkit-scrollbar
+	-webkit-appearance: none
+	width: 7px
+
+::-webkit-scrollbar-thumb
+	border-radius: 4px
+	background-color: rgba(0, 0, 0, .5)
+	-webkit-box-shadow: 0 0 1px rgba(255, 255, 255, .5)
 
 // SLICK SLIDER
 .slick-list
