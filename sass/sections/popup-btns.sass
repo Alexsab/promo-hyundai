@@ -1,0 +1,52 @@
+.popup-btns
+	padding: 0
+	margin: 0
+	// max-width: 1400px
+	// width: 100%
+	margin: 10px auto
+	padding: 0 15px
+	display: flex
+	justify-content: center
+	flex-wrap: wrap
+	li
+		list-style-type: none
+		max-width: 320px
+		width: 100%
+		transform: skewX(-25deg)
+		background-color: $red
+		margin: 10px
+		overflow: hidden
+		position: relative
+		z-index: 1
+		&:hover
+			&:before
+				left: 200%
+				opacity: 1
+		&:before
+			content: ''
+			display: inline-block
+			box-shadow: 0 0 100px 100px rgba($white, .3)
+			width: 20px
+			height: 100%
+			background-color: rgba($white, .3)
+			position: absolute
+			left: -100%
+			top: 0
+			transform: skewX(-4deg)
+			transition: all .5s ease-in-out
+			z-index: -1
+			opacity: 1
+		a
+			display: block
+			text-align: center
+			color: $white
+			transform: skewX(25deg)
+			padding: 15px 10px
+			text-transform: uppercase
+			font-weight: normal
+			font-size: 16px
+			position: relative
+			z-index: 1
+			transition: none
+			+media-breakpoint-down(xs)
+				font-size: 14px
