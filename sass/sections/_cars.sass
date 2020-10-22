@@ -254,7 +254,7 @@
 		position: absolute
 		top: -20px
 		left: 0px
-		line-height: 1.4
+		line-height: 1.2
 		width: 100%
 		text-align: center
 
@@ -269,10 +269,9 @@
 		.photo
 			position: relative
 			display: block
-			height: 340px
+			height: 204px
 			width: 60%
 			flex-grow: 2
-			margin-bottom: -30px
 			&:hover
 				img
 					&:first-child()
@@ -323,6 +322,10 @@
 			padding-left: 90px
 			box-sizing: border-box
 			min-height: 70px
+			&:hover
+				cursor: pointer
+				&:not(.present):before
+					background-color: darken($red, 10%)
 
 			&:not(.quantity):not(.present)
 				flex-basis: 32%
@@ -359,6 +362,7 @@
 				top: 0
 				left: 0px
 				z-index: 0
+				transition: all .3s ease
 
 			&:after
 				content: ""
