@@ -147,7 +147,14 @@ jQuery(function($) {
 	});
 
 	$('a[href="#credit"]').click(function(){
-		var price = $(this).parent().prev().find('.relevant-price').text();
+		var parent = $(this).parent().prev();
+
+		if (parent.hasClass('car-link')) {
+			var price = parent.find('.relevant-price').text(); //для старой карточки
+		}else{
+			var price = parent.parent().prev().find('.relevant-price').text(); //для новой карточки
+		}
+	
 		var str = price.replace(/[^\d]/g, '');
 		$('.contribution').find('.range').attr('max', str);
 		$('.contribution').find('.range__interval-txt_max').text(str);
