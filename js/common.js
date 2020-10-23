@@ -147,12 +147,12 @@ jQuery(function($) {
 	});
 
 	$('a[href="#credit"]').click(function(){
-		var parent = $(this).parent().prev();
-
-		if (parent.hasClass('car-link')) {
-			var price = parent.find('.relevant-price').text(); //для старой карточки
-		}else{
-			var price = parent.parent().prev().find('.relevant-price').text(); //для новой карточки
+		var parent = $(this).parent().parent();
+		if(parent.hasClass('car2-bottom')) {
+			var price = parent.parent().find('.relevant-price').text();
+		}
+		else {
+			var price = parent.find('.relevant-price').text();
 		}
 	
 		var str = price.replace(/[^\d]/g, '');
