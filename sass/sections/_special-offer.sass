@@ -6,30 +6,42 @@
 	&__item
 		display: flex
 		align-items: stretch
-		&:hover
-			.special__item-img
-				img
-					transform: scale(1.1)
 		&-img
 			flex: 0 0 40%
 			overflow: hidden
+			position: relative
 			img
-				transition: all .25s ease-out
+				max-width: 100%
+			.lazyload
+				position: absolute
+				top: 50%
+				left: 50%
+				transform: translate(-50%, -50%)
 		&-info
-			flex: 1 0 auto	
+			flex: 1 0 auto
+			display: flex
+			flex-direction: column
+			justify-content: center	
 		&-buttons
 			flex: 0 0 200px
 			display: flex
 			flex-direction: column
-			justify-content: space-around
+			justify-content: center
+			.btn
+				margin: 5px 0
 
 .item-info
 	font-size: 24px
 	&__title
+		margin-bottom: 15px
 		h3
 			font-size: 34px
-			line-height: 1.4
 			display: inline-block
+			margin-bottom: 0
+			line-height: 1.4
+		s
+			line-height: 1.4
+			font-weight: 500
 	&__price
 		span
 			color: $red
