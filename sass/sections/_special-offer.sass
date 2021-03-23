@@ -1,0 +1,37 @@
+.special-offer
+	&__block
+		margin-top: 5%
+
+.special
+	&__item
+		display: flex
+		align-items: stretch
+		&:hover
+			.special__item-img
+				img
+					transform: scale(1.1)
+		&-img
+			flex: 0 0 40%
+			overflow: hidden
+			img
+				transition: all .25s ease-out
+		&-info
+			flex: 1 0 auto	
+		&-buttons
+			flex: 0 0 200px
+			display: flex
+			flex-direction: column
+			justify-content: space-around
+
+.item-info
+	font-size: 24px
+	&__title
+		h3
+			font-size: 34px
+			line-height: 1.4
+			display: inline-block
+	&__price
+		span
+			color: $red
+			font-weight: bold
+			font-size: 26px
