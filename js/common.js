@@ -148,13 +148,19 @@ jQuery(function($) {
 
 	$('a[href="#credit"]').click(function(){
 		var parent = $(this).parent().parent();
-		if(parent.hasClass('car2-bottom')) {
-			var price = parent.parent().find('.relevant-price').text();
+		var price = '';
+
+		if(parent.hasClass('car2-bottom') && price != 'undefined') {
+			price = parent.parent().find('.relevant-price').text();
 		}
 		else {
-			var price = parent.find('.relevant-price').text();
+			price = parent.find('.relevant-price').text();
 		}
-	
+
+		if ($(this).data('price')) {
+			price = $(this).data('price');
+		}
+
 		var str = price.replace(/[^\d]/g, '');
 		$('.contribution').find('.range').attr('max', str);
 		$('.contribution').find('.range__interval-txt_max').text(str);
