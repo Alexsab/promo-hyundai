@@ -4,13 +4,13 @@ $(function() {
             {
                 parent: '.dealer-map',
                 id: "map1",
-                position: [53.184167, 50.151410],
+                position: [45.017397, 38.937629],
                 zoom: 17,
-                balloonContentHeader: 'Официальный дилерский центр Hyundai «Автоцентр Альфа»',
-                balloonContentBody: '<a href="tel:+78469777888" class="dealer-phone">☎️ 8 (846) 9 777 888</a><br><a href="mailto:call@hyundai-alpha.ru" class="dealer-email">📩 call@hyundai-alpha.ru</a><br><br> \
-                    <a href="https://yandex.ru/maps/51/samara/?from=api-maps&ll=50.152043%2C53.184167&mode=routes&origin=jsapi_2_1_76&rtext=~53.184167%2C50.151410&rtt=auto&ruri=~&z=17"  target="_blank" class="dealer-phone">📍 Как добраться</a><br>',
+                balloonContentHeader: 'Официальный дилерский центр Hyundai «Huindai Автохолдинг»',
+                balloonContentBody: '<a href="tel:+78612974444" class="dealer-phone">☎️ +7 (861) 297-44-44</a><br><a href="mailto:reception@hyundai-turgenevskiy.ru" class="dealer-email">📩 reception@hyundai-turgenevskiy.ru</a><br><br> \
+                    <a href="https://yandex.ru/maps/?z=17&ll=38.937629,45.017397&l=map&rtext=~45.017397,38.937629&origin=jsapi_2_1_76&from=api-maps"  target="_blank" class="dealer-phone">📍 Как добраться</a><br>',
                 balloonContentFooter: 'пн — вс: 8:00 — 20:00',
-                hintContent: 'Официальный дилерский центр Hyundai «Автоцентр Альфа»'
+                hintContent: 'Официальный дилерский центр Hyundai «Huindai Автохолдинг»'
             },
 
         ],
