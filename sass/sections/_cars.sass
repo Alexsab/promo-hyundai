@@ -374,6 +374,16 @@
 				top: 25px
 				left: 21px
 				z-index: 1
+			&.cash
+				flex-basis: 100%
+				display: flex
+				align-items: center
+				font-size: 28px
+				color: $accent1
+				.descr-text
+					white-space: nowrap
+					animation: blurblack 2s ease-out infinite
+
 			&.quantity:after
 				content: url(../img/icons/quantity.svg)
 			&.color:after
@@ -417,7 +427,22 @@
 			white-space: normal
 			&:hover
 				background-color: darken($greey, 5%)
-				color: $accent
+				color: $accent1
+
+@keyframes blurblack
+	from 
+		text-shadow: 0px 0px 8px #fff,
+		0px 0px 0px $red,
+		0px 0px 5px $red,
+		0px 0px 5px $red,
+		0px 0px 5px $red,
+		0px 0px 5px $red,
+		0px 0px 5px $red,
+		0px 0px 5px $red,
+		0px 0px 10px $red,
+		0px 0px 10px $red
+
+
 
 
 @-webkit-keyframes mypulse
