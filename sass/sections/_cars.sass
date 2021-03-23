@@ -307,7 +307,7 @@
 			// padding-left: 24px
 			position: relative
 			color: $black
-			
+
 			span
 				font-size: 30px
 				color: $accent
@@ -374,17 +374,6 @@
 				top: 25px
 				left: 21px
 				z-index: 1
-
-			&.cash
-				flex-basis: 100%
-				display: flex
-				align-items: center
-				font-size: 28px
-				color: $accent1
-				.descr-text
-					white-space: nowrap
-					animation: blurblack 2s ease-out infinite
-
 			&.quantity:after
 				content: url(../img/icons/quantity.svg)
 			&.color:after
@@ -403,7 +392,7 @@
 		flex-flow: column
 		flex-grow: 2
 		.btn
-			flex: 1 0 100%
+			flex: 1 1 100%
 			font-size: 14px
 			text-transform: none
 			padding: 12px 25px
@@ -428,28 +417,13 @@
 			white-space: normal
 			&:hover
 				background-color: darken($greey, 5%)
-				color: $accent1
-
-@keyframes blurblack
-	from 
-		text-shadow: 0px 0px 8px #fff,
-		0px 0px 0px $red,
-		0px 0px 5px $red,
-		0px 0px 5px $red,
-		0px 0px 5px $red,
-		0px 0px 5px $red,
-		0px 0px 5px $red,
-		0px 0px 5px $red,
-		0px 0px 10px $red,
-		0px 0px 10px $red
+				color: $accent
 
 
-
-
-@-webkit-keyframes mypulse 
-	from 
+@-webkit-keyframes mypulse
+	from
 		transform: scale3d(1, 1, 1)
-	50% 
+	50%
 		transform: scale3d(1.05, 1.05, 1.05)
-	to 
+	to
 		transform: scale3d(1, 1, 1)
