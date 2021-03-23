@@ -64,6 +64,9 @@
 					height: 30px
 					top: 15px
 					left: 15px
+			&.cash
+				flex-basis: 100%
+				font-size: 24px
 		.car-link
 			h2
 				width: 100%
@@ -118,6 +121,8 @@
 				color: $text
 		.descr-item:not(.quantity)
 			flex-basis: 32%
+		.descr-item.cash
+			flex-basis: 100%
 	.player
 		display: none
 	.modal
@@ -185,6 +190,8 @@
 			.quantity
 				.descr-text
 					font-size: 14px
+		.descr-item.cash
+			font-size: 20px
 	.offer
 		padding: 25px 0
 	.modal .range__title
