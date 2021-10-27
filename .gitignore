@@ -4,3 +4,5 @@ phpmailer
 sftp-config*.json
 /images/
 /.alexsab/
+.DS_Store
+avito/**/*.jpg
